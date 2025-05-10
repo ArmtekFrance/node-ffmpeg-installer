@@ -1,5 +1,5 @@
 {
-  "name": "@ffmpeg-installer/ffmpeg",
+  "name": "@armtekfrance/ffmpeg-installer",
   "version": "2.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,14 +22,14 @@
   "license": "LGPL-2.1",
   "description": "Platform independent binary installer of FFmpeg for node projects",
   "optionalDependencies": {
-    "@ffmpeg-installer/darwin-arm64": "4.1.5",
-    "@ffmpeg-installer/darwin-x64": "4.1.0",
-    "@ffmpeg-installer/linux-arm": "4.1.3",
-    "@ffmpeg-installer/linux-arm64": "4.1.4",
-    "@ffmpeg-installer/linux-ia32": "4.1.0",
-    "@ffmpeg-installer/linux-x64": "4.1.0",
-    "@ffmpeg-installer/win32-ia32": "4.1.0",
-    "@ffmpeg-installer/win32-x64": "4.1.0"
+    "@armtekfrance/darwin-arm64": "4.1.5",
+    "@armtekfrance/darwin-x64": "4.1.0",
+    "@armtekfrance/linux-arm": "4.1.3",
+    "@armtekfrance/linux-arm64": "4.1.4",
+    "@armtekfrance/linux-ia32": "4.1.0",
+    "@armtekfrance/linux-x64": "4.1.0",
+    "@armtekfrance/win32-ia32": "4.1.0",
+    "@armtekfrance/win32-x64": "4.1.0"
   },
   "devDependencies": {
     "jshint": "^2.9.3",

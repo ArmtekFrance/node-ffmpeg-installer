@@ -8,19 +8,19 @@ A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let
 
 ## Install
 
-    npm install --save @ffmpeg-installer/ffmpeg
+    npm install --save @armtekfrance/ffmpeg
 
 ## Usage examples
 
 ```javascript
-const ffmpeg = require('@ffmpeg-installer/ffmpeg');
+const ffmpeg = require('@armtekfrance/ffmpeg');
 console.log(ffmpeg.path, ffmpeg.version);
 ```
 
 ### [process.spawn()](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options)
 
 ```javascript
-const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+const ffmpegPath = require('@armtekfrance/ffmpeg').path;
 const spawn = require('child_process').spawn;
 const ffmpeg = spawn(ffmpegPath, args);
 ffmpeg.on('exit', onExit);
@@ -29,7 +29,7 @@ ffmpeg.on('exit', onExit);
 ### [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
 
 ```javascript
-const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+const ffmpegPath = require('@armtekfrance/ffmpeg').path;
 const ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath(ffmpegPath);
 ```
@@ -53,12 +53,12 @@ See [issue #21](https://github.com/kribblo/node-ffmpeg-installer/issues/21)
 It's a [known issue](https://github.com/electron-userland/electron-packager/issues/740) that Asar breaks native paths. As a workaround, if you use Asar, you can do something like this:
 
 ```javascript
-const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path.replace('app.asar', 'app.asar.unpacked');
+const ffmpegPath = require('@armtekfrance/ffmpeg').path.replace('app.asar', 'app.asar.unpacked');
 ```
 
 ### Compiling ffmpeg for platforms other than your own
 
-If you need to install a version of `ffmpeg` that differs than your current platform (e.g. compiling a Linux version to upload to AWS Lambda from MacOS), you can use `npm install @ffmpeg-installer/linux-x64 --force` (substituting `linux-x64` with whatever platform you need). Note that if you are compressing your project into a `.zip` for Lambda, you will need to exclude the other platforms' builds from your archive.
+If you need to install a version of `ffmpeg` that differs than your current platform (e.g. compiling a Linux version to upload to AWS Lambda from MacOS), you can use `npm install @armtekfrance/linux-x64 --force` (substituting `linux-x64` with whatever platform you need). Note that if you are compressing your project into a `.zip` for Lambda, you will need to exclude the other platforms' builds from your archive.
 
 ## The binaries
 
