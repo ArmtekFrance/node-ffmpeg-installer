@@ -46,7 +46,7 @@ If you get permissions issues, try adding a .npmrc file with the following:
 
     unsafe-perm=true
 
-See [issue #21](https://github.com/kribblo/node-ffmpeg-installer/issues/21)
+See [issue #21](https://github.com/ArmtekFrance/node-ffmpeg-installer/issues/21)
 
 ### Wrong path under Electron with Asar enabled
 
